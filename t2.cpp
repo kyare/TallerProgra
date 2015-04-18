@@ -11,7 +11,7 @@ void pass(string words[], string clave,int lugar, string pre,int lugarW,int n) {
 	else if(clave[lugar] == '#') {
 
              pass(words, clave, lugar +1, pre + words[lugarW],lugarW,n);
-             if(lugarW<n){
+             if(lugarW+1<n){
                 pass(words, clave, lugar +1, pre + words[lugarW],lugarW++,n);
              }
 		}
@@ -39,6 +39,8 @@ void pass(string words[], string clave,int lugar, string pre,int lugarW,int n) {
         string word="";
         string rule="";
         int m=0;
+
+
         if(n>0 && n<=100){
             cout<<"--"<< endl;
             for (int i = 0; i < n; i++) {
