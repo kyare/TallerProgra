@@ -36,7 +36,7 @@ public class FrameAgregarBus extends JFrame {
 	 * Create the frame.
 	 */
 	
-	public FrameAgregarBus(Agencia agencia) {
+	public FrameAgregarBus(final Agencia agencia) {
 		setTitle("Agregar un Bus");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -68,7 +68,7 @@ public class FrameAgregarBus extends JFrame {
 		comboBoxDia.setBounds(166, 111, 45, 20);
 		contentPane.add(comboBoxDia);
 		
-		JComboBox<String> comboBoxMes = new JComboBox<String>();
+		final JComboBox<String> comboBoxMes = new JComboBox<String>();
 		comboBoxMes.addItem("Mes");
 		for (int i = 1; i <= 12; i++) {
 			if(i < 10)
@@ -79,7 +79,7 @@ public class FrameAgregarBus extends JFrame {
 		comboBoxMes.setBounds(221, 111, 45, 20);
 		contentPane.add(comboBoxMes);
 		
-		JComboBox<String> comboBoxAño = new JComboBox<String>();
+		final JComboBox<String> comboBoxAño = new JComboBox<String>();
 		comboBoxAño.addItem("Año");
 		for (int i = 1920; i <= 2015 ; i++) {
 			comboBoxAño.addItem(String.valueOf(i));
@@ -94,7 +94,7 @@ public class FrameAgregarBus extends JFrame {
 		for(int i = 10; i < 60; i++)
 			tiempo[i+1] = "" + i;
 		
-		JComboBox<String> comboBoxHoraSal = new JComboBox<String>();
+		final JComboBox<String> comboBoxHoraSal = new JComboBox<String>();
 		comboBoxHoraSal.setModel(new DefaultComboBoxModel<String>(tiempo));
 		comboBoxHoraSal.addItem("HSalida");
 		for (int i = 00; i <= 23 ; i++) {
@@ -103,7 +103,7 @@ public class FrameAgregarBus extends JFrame {
 		comboBoxHoraSal.setBounds(203, 139, 45, 20);
 		contentPane.add(comboBoxHoraSal);
 		
-		JComboBox<String> comboBoxMinutoSal = new JComboBox<String>();
+		final JComboBox<String> comboBoxMinutoSal = new JComboBox<String>();
 		comboBoxMinutoSal.setModel(new DefaultComboBoxModel<String>(tiempo));
 		comboBoxMinutoSal.addItem("MSalida");
 		for (int i = 00; i <= 59 ; i++) {
@@ -112,7 +112,7 @@ public class FrameAgregarBus extends JFrame {
 		comboBoxMinutoSal.setBounds(258, 139, 45, 20);
 		contentPane.add(comboBoxMinutoSal);
 		
-		JComboBox<String> comboBoxHoraLleg = new JComboBox<String>();
+		final JComboBox<String> comboBoxHoraLleg = new JComboBox<String>();
 		comboBoxHoraLleg.setModel(new DefaultComboBoxModel<String>(tiempo));
 		comboBoxHoraLleg.addItem("HLlegada");
 		for (int i = 00; i <= 23 ; i++) {
@@ -121,7 +121,7 @@ public class FrameAgregarBus extends JFrame {
 		comboBoxHoraLleg.setBounds(203, 167, 45, 20);
 		contentPane.add(comboBoxHoraLleg);
 		
-		JComboBox<String> comboBoxMinutoLleg = new JComboBox<String>();
+		final JComboBox<String> comboBoxMinutoLleg = new JComboBox<String>();
 		comboBoxMinutoLleg.setModel(new DefaultComboBoxModel<String>(tiempo));
 		comboBoxMinutoLleg.addItem("MinutoLleg");
 		for (int i = 00; i <= 59 ; i++) {
@@ -130,11 +130,11 @@ public class FrameAgregarBus extends JFrame {
 		comboBoxMinutoLleg.setBounds(258, 167, 45, 20);
 		contentPane.add(comboBoxMinutoLleg);
 		
-		JComboBox<String> comboBoxSalida = new JComboBox<String>();	
+		final JComboBox<String> comboBoxSalida = new JComboBox<String>();	
 		comboBoxSalida.setBounds(118, 80, 91, 20);
 		contentPane.add(comboBoxSalida);
 		
-		JComboBox<String> comboBoxLlegada = new JComboBox<String>();
+		final JComboBox<String> comboBoxLlegada = new JComboBox<String>();
 		comboBoxLlegada.setBounds(242, 80, 85, 20);
 		contentPane.add(comboBoxLlegada);
 		

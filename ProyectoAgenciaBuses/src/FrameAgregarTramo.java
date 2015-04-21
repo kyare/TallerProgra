@@ -61,11 +61,11 @@ public class FrameAgregarTramo extends JFrame {
 		lblTarifa.setBounds(137, 125, 49, 14);
 		contentPane.add(lblTarifa);
 		
-		JComboBox<String> comboBoxLlegada = new JComboBox<String>();
+		final JComboBox<String> comboBoxLlegada = new JComboBox<String>();
 		comboBoxLlegada.setBounds(234, 91, 103, 20);
 		contentPane.add(comboBoxLlegada);
 		
-		JComboBox<String> comboBoxSalida = new JComboBox<String>();
+		final JComboBox<String> comboBoxSalida = new JComboBox<String>();
 		comboBoxSalida.setBounds(111, 91, 103, 20);
 		contentPane.add(comboBoxSalida);
 		

@@ -1,5 +1,4 @@
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -45,7 +44,7 @@ public class FrameMostrarBuses extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public FrameMostrarBuses(Agencia agencia) {
+	public FrameMostrarBuses(final Agencia agencia) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 719, 492);
 		contentPane = new JPanel();
@@ -73,7 +72,7 @@ public class FrameMostrarBuses extends JFrame {
 		label.setBounds(93, 51, 43, 14);
 		panel.add(label);
 		
-		JComboBox<String> comboBoxSalida = new JComboBox<String>();
+		final JComboBox<String> comboBoxSalida = new JComboBox<String>();
 			String[] lugares = agencia.listarLugarestoString();
 			comboBoxSalida.removeAllItems();
 			comboBoxSalida.addItem("");
@@ -87,7 +86,7 @@ public class FrameMostrarBuses extends JFrame {
 		label_1.setBounds(164, 51, 54, 14);
 		panel.add(label_1);
 		
-		JComboBox<String> comboBoxLlegada = new JComboBox<String>();
+		final JComboBox<String> comboBoxLlegada = new JComboBox<String>();
 		comboBoxLlegada.removeAllItems();
 		comboBoxLlegada.addItem("");
 		for(int i = 0; i < lugares.length; i++) {
@@ -96,15 +95,15 @@ public class FrameMostrarBuses extends JFrame {
 		comboBoxLlegada.setBounds(146, 71, 72, 20);
 		panel.add(comboBoxLlegada);
 		
-		JComboBox<String> comboBoxDia = new JComboBox<String>();
+		final JComboBox<String> comboBoxDia = new JComboBox<String>();
 		comboBoxDia.setBounds(255, 71, 37, 20);
 		panel.add(comboBoxDia);
 		
-		JComboBox<String> comboBoxMes = new JComboBox<String>();
+		final JComboBox<String> comboBoxMes = new JComboBox<String>();
 		comboBoxMes.setBounds(298, 71, 79, 20);
 		panel.add(comboBoxMes);
 		
-		JComboBox<Integer> comboBoxAnio = new JComboBox<Integer>();
+		final JComboBox<Integer> comboBoxAnio = new JComboBox<Integer>();
 		comboBoxAnio.setBounds(383, 71, 57, 20);
 		panel.add(comboBoxAnio);
 		

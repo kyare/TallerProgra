@@ -60,7 +60,7 @@ public class BuscarBuses extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public BuscarBuses(Agencia agencia, Cliente cliente) {
+	public BuscarBuses(final Agencia agencia, final Cliente cliente) {
 		this.agencia = agencia;
 		this.labelNombre = new JLabel("Bienvenid@ " + cliente.getNombres() + " " + cliente.getApellidos());
 		textFieldIdBus.setColumns(10);
@@ -105,7 +105,7 @@ public class BuscarBuses extends JFrame {
 		textFieldAsientos.setText("1");
 		textFieldAsientos.setColumns(10);
 		
-		JComboBox<Integer> comboBoxAnio = new JComboBox<Integer>();
+		final JComboBox<Integer> comboBoxAnio = new JComboBox<Integer>();
 		comboBoxAnio.setModel(new DefaultComboBoxModel<Integer>(new Integer[] {2015, 2016}));
 		
 		JLabel lblSalida = new JLabel("Salida");

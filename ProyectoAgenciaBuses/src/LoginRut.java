@@ -38,7 +38,7 @@ public class LoginRut extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public LoginRut(Agencia agencia) {
+	public LoginRut(final Agencia agencia) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

@@ -1,5 +1,4 @@
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -16,6 +15,10 @@ import java.awt.event.ActionEvent;
 
 public class FrameMostrarTramos extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable table;
 
@@ -38,7 +41,7 @@ public class FrameMostrarTramos extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public FrameMostrarTramos(Agencia agencia) {
+	public FrameMostrarTramos(final Agencia agencia) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

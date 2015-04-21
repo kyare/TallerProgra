@@ -45,7 +45,7 @@ public class MenuPrincipal extends JFrame {
 		label.setBounds(27, 25, 46, 14);
 		contentPane.add(label);
 		
-		JComboBox<String> comboBox_1 = new JComboBox<String>();
+		final JComboBox<String> comboBox_1 = new JComboBox<String>();
 		comboBox_1.setModel(new DefaultComboBoxModel<String>(new String[] {"Compra de  Pasajes", "Devoluci\u00F3n de Pasajes"}));
 		comboBox_1.setBounds(169, 60, 138, 20);
 		contentPane.add(comboBox_1);
@@ -142,7 +142,7 @@ public class MenuPrincipal extends JFrame {
 		lblMostrar.setBounds(27, 123, 144, 23);
 		contentPane.add(lblMostrar);
 		
-		JComboBox<String> comboBoxMostrar = new JComboBox<String>();
+		final JComboBox<String> comboBoxMostrar = new JComboBox<String>();
 		comboBoxMostrar.setModel(new DefaultComboBoxModel<String>(new String[] {"Lugares", "Tramos", "Buses", "Clientes"}));
 		comboBoxMostrar.setBounds(169, 124, 138, 20);
 		contentPane.add(comboBoxMostrar);
